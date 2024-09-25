@@ -1,0 +1,62 @@
+// Color variable
+$dark: #343a40;
+$light: #f8f9fa;
+$brand-primary: #010E0F;
+$brand-secondary: #011C1D; // #047072
+$brand-2: #422b46;
+$brand-3: #523d14;
+
+// Cut off for dynamic changing of phone and computer view
+$screen_width_cut_off: 768px;
+$smallest_screen_width: 320px;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(135deg, $brand-primary, $brand-secondary);
+  animation: backgroundAnimation 10s ease infinite;
+  font-family: 'Arial', sans-serif;
+  color: $light;
+  padding: 0rem;
+
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+
+    50% {
+      background-position: 0% 100%;
+    }
+
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+}
+
+.button_effect {
+  text-decoration: none; // Remove underline 
+  color: inherit; // Inherit the text color from the parent 
+  background: inherit; // Remove background if any 
+
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+
+  &:active {
+    transform: scale(1.05);
+  }
+}

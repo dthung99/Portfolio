@@ -1,0 +1,80 @@
+@import "../../color_variables/CSSVariable.scss";
+
+.nav-bar {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .web_name {
+        padding-left: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; // Align items to the end (right side)
+        align-items: center;
+        font-size: 2rem;
+
+        @media (max-width: $screen_width_cut_off) {
+            color: transparent;
+            font-size: 0rem;
+        }
+
+    }
+
+    .nav-bar-big {
+        height: 100%;
+        padding-right: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; // Align items to the end (right side)
+        align-items: center;
+
+        @media (max-width: $screen_width_cut_off) {
+            display: none;
+        }
+
+        .nav-bar-big-item {
+            border-radius: 1rem;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            @extend .button_effect;
+        }
+    }
+
+    .nav-bar-small {
+        height: 100%;
+        padding-right: 0.5rem;
+        display: none;
+        flex-direction: row;
+        justify-content: flex-end; // Align items to the end (right side)
+        align-items: center;
+
+        @media (max-width: $screen_width_cut_off) {
+            display: flex;
+        }
+
+        .nav-bar-small-item {
+            border-radius: 1rem;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+            @extend .button_effect;
+
+            // Text to appear when hover over some item
+            .my_hover_text {
+                display: none; // Hide the text by default
+                position: absolute; // Position it relative to the container 
+                background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background 
+                color: white; // Text color 
+                padding: 1rem; // Padding for the text 
+                border-radius: 0.5rem; // Rounded corners 
+                top: 0%; // Position below the hover target 
+                transform: translateY(100%); // Adjust position to center 
+                white-space: nowrap; // So it does not wrap
+            }
+
+            .my_hover_target:hover+.my_hover_text {
+                display: flex; // Show the text when hovering over the target 
+            }
+        }
+    }
+}

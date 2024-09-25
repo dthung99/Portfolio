@@ -1,0 +1,21 @@
+@import "./color_variables/CSSVariable.scss";
+
+.main_layout {
+  display: grid;
+  grid-template-rows: auto 1fr; // Two rows: first auto height, second takes remaining space
+  margin: 0rem;
+  width: 100vw;
+
+  .main_layout_top {
+    width: 100%;
+    height: 8rem;
+    border-bottom: 0.5px dashed gray;
+  }
+
+  .main_layout_middle {
+    display: flex;
+    background-color: inherit;
+  }
+}
+
+// You can define more variables as needed
