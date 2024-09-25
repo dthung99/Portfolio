@@ -1,0 +1,30 @@
+$dark: #343a40;
+$light: #f8f9fa;
+$brand-primary: #010E0F;
+$brand-secondary: #011C1D; // #047072
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, $brand-primary, $brand-secondary);
+  animation: backgroundAnimation 10s ease infinite;
+  font-family: 'Arial', sans-serif;
+  color: $light;
+
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+
+    50% {
+      background-position: 0% 100%;
+    }
+
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+}
