@@ -15,7 +15,7 @@ const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescripti
                         if (key === "Link") {
                             return (
                                 <div key={key} className='small-flash-card-item' href={value}>
-                                    <a href={value} className='small-flash-card-item-link'>{value}</a>.
+                                    <a href={value} className='small-flash-card-item-link'>{value}</a>
                                 </div>
                             );
                         } else if (key === "GitHub") {
@@ -24,8 +24,19 @@ const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescripti
                                     Visit my <a href={value} className='small-flash-card-item-link'>GitHub</a>.
                                 </div>
                             );
-                        }
-                        else if (key === "Image") {
+                        } else if (key.startsWith("Image")) {
+                            if (key.endsWith("%")) {
+                                return (
+                                    <div key={key} className='small-flash-card-item'>
+                                        <img
+                                            src={value}
+                                            alt="Image"
+                                            className='small-flash-card-item-image'
+                                            style={{ width: key.slice(-3) }}
+                                        />
+                                    </div>
+                                );
+                            }
                             return (
                                 <div key={key} className='small-flash-card-item'>
                                     <img

@@ -6,34 +6,34 @@
         "projects": [
             {
                 "type": "Project",
-                "title": "My Portfolio Page",
-                "shortDescription": "You are looking at it! It's just a simple 2-day project built with React and some CI/CD. What I like about it is the scalable design that allows me to update my data in a .json file.",
-                "fullDescription": {
-                    "Link": "None",
-                    "GitHub": "https://github.com/dthung99/portfolio",
-                    "Image": "2",
-                    "Text": "2"
-                }
-            },
-            {
-                "type": "Project",
                 "title": "Seal Idea",
                 "shortDescription": "A project stemming from a silly idea. It is built with PostgreSQL, Spring Boot (Java), and React (JavaScript), following a basic distributed architecture (Model-View-Controller). I also created a CI/CD pipeline to automate deployment: GitHub → Docker → AWS.",
                 "fullDescription": {
                     "Link": "https://sealidea.com/",
                     "GitHub": "https://github.com/dthung99/Seal_Idea",
                     "Image": "https://github.com/dthung99/Seal_Idea/blob/main/images/illustration_image.png?raw=true",
-                    "Text-1": "Time: 3 weeks",
-                    "Text-2": "Task: Idealization, design, development, testing, deployment.",
-                    "Text-3": "Distributed Architecture: Model-View-Controller with PostgreSQL - Spring Boot (Java) - React (JavaScript)",
+                    "Text-1": "Task: Idealization, design, development, testing, deployment.",
+                    "Text-2": "Time: 3 weeks. Below are a snapshot of what I did:",
+                    "Text-3": "Distributed Sytem: Implemented with a Model-View-Controller architecture using PostgreSQL - Spring Boot (Java) - React (JavaScript)",
                     "Text-4": "Network: Set up CORS to allow proxy traffic only from the front-end server; configured SSL certificates for HTTPS; established AWS VPC to allow only HTTPS traffic from users and forbid all other traffic to the backend or database.",
                     "Text-5": "Security: Developed authentication features including registration, login, logout, and password changes; executed stateless authentication by distributing a signed JWT in user cookies.",
                     "Text-6": "Databases: Designed a relational database schema with 3 tables (Accounts, Posts, and Personal Profile).",
-                    "Text-7": "Backend: Spring Boot using JPA (Hibernate) to interface with PostgreSQL and provide RESTful API for React (served on Nginx); integrated security functions with Spring Security.",
+                    "Text-7": "Backend: Developed a Spring Boot backend that communicates with the database using JPA (Hibernate) and interfaces with a React frontend (served on Nginx) via RESTful API. Integrated security functions using Spring Security.",
                     "Text-8": "Frontend: Designed a high-performance, responsive multi-page UI in React (optimized for screens as small as 320px) with a natural workflow to enhance user experience; evaluated UI/UX on different browsers and devices.",
                     "Text-9": "Website Features: Implemented multiple features: posting status, encrypting messages, personal list of posts, public API for developers.",
-                    "Text-10": "AWS: Deployed SQL server on AWS RDS; back-end and front-end servers on two different ports of AWS EC2; established remote control for AWS services via SSH.",
+                    "Text-10": "AWS: Deployed SQL server on AWS RDS; deployed back-end and front-end servers on two different ports of AWS EC2; established remote control for AWS services via SSH.",
                     "Text-11": "CI/CD: Created two pipelines with GitHub Actions to automate testing, inject deployment variables, build Docker containers, and deploy to AWS via SSH connection."
+                }
+            },
+            {
+                "type": "Project",
+                "title": "My Portfolio Page",
+                "shortDescription": "You are looking at it! It's just a simple 2-day project built with React and some CI/CD. What I like about it is the scalable design that allows me to update my data in a .json file.",
+                "fullDescription": {
+                    "Link": "https://dthung.xyz/",
+                    "GitHub": "https://github.com/dthung99/portfolio",
+                    "Image25%": "https://github.com/dthung99/Portfolio/blob/main/screenshot_images/illustration_image.jpg?raw=true",
+                    "Text": "The page is hosted on GitHub Pages. It took me 2 days to learn and complete all the design, development, and deployment. There are two .json files that I can update to add new projects dynamically. Cool, isn't it?"
                 }
             }
         ]
@@ -44,10 +44,86 @@
         "colorConcept": "#ffffff0F",
         "projects": [
             {
-                "projectTitle": "Project A",
-                "shortDescription": "Short description A",
-                "fullDescription": "Full description A"
+                "type": "Project",
+                "title": "Liver Cancer Segmentation",
+                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
+                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
+                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
+                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
+                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                }
+            },
+            {
+                "type": "Project",
+                "title": "Age ",
+                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
+                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
+                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
+                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
+                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                }
+            },
+            {
+                "type": "Project",
+                "title": "Liver Cancer Segmentation",
+                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
+                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
+                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
+                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
+                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                }
+            },            {
+                "type": "Project",
+                "title": "Liver Cancer Segmentation",
+                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
+                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
+                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
+                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
+                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                }
+            },            {
+                "type": "Project",
+                "title": "Liver Cancer Segmentation",
+                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
+                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
+                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
+                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
+                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                }
+            },            {
+                "type": "Project",
+                "title": "Liver Cancer Segmentation",
+                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
+                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
+                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
+                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
+                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                }
+            },            {
+                "type": "Project",
+                "title": "Liver Cancer Segmentation",
+                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
+                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
+                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
+                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
+                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                }
             }
+
         ]
     },
     {
