@@ -11,7 +11,7 @@ const MainFlashCard = ({ title, shortDescription, bodyData, ...prop }) => {
 
     return (
         <>
-            <div className="item-main-flash-card-layout" onClick={() => { if (!isMainExpand) { setIsMainExpand(true) } }} {...prop}>
+            <div className="item-main-flash-card-layout" {...prop}>
                 <div className="flash-main-card-title" onClick={() => setIsMainExpand(!isMainExpand)}>
                     {isMainExpand ? <CircleChevronDown /> : <CircleChevronRight />}
                     &nbsp; {title}
@@ -27,8 +27,10 @@ const MainFlashCard = ({ title, shortDescription, bodyData, ...prop }) => {
                                 flashCardFullDescription={smallCardData.fullDescription} />
                         ))}
                     </div>
-
-                    : <> {shortDescription} </>}
+                    :
+                    <div className="flash-main-card-body-index">
+                        {shortDescription}
+                    </div>}
             </div>
         </>
     )

@@ -24,6 +24,11 @@
         justify-content: flex-start;
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
+
+        &:hover {
+            transform: scale(1.005);
+            cursor: pointer;
+        }
     }
 
     .small-flash-card-body {
@@ -51,4 +56,9 @@
             }
         }
     }
+
+    .small-flash-card-body-index {
+        text-indent: 1rem;
+    }
+
 }

@@ -67,7 +67,7 @@ const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescripti
 
     return (
         <>
-            <div className="item-small-flash-card-layout" onClick={() => { if (!isMainExpand) { setIsMainExpand(true) } }} {...prop}>
+            <div className="item-small-flash-card-layout" {...prop}>
                 <div className="small-flash-card-title" onClick={() => setIsMainExpand(!isMainExpand)}>
                     {isMainExpand ? <ChevronDown /> : <ChevronRight />}
                     &nbsp; {flashCardTitle}
@@ -77,7 +77,7 @@ const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescripti
                         <FullDescription />
                     </div>
                     :
-                    <div className="small-flash-card-body">
+                    <div className="small-flash-card-body-index">
                         {flashCardShortDescription}
                     </div>}
             </div>

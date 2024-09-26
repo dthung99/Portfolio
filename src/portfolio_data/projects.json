@@ -11,7 +11,7 @@
                 "fullDescription": {
                     "Link": "https://sealidea.com/",
                     "GitHub": "https://github.com/dthung99/Seal_Idea",
-                    "Image": "https://github.com/dthung99/Seal_Idea/blob/main/images/illustration_image.png?raw=true",
+                    "Image": "https://github.com/dthung99/Seal_Idea/blob/main/images/demonstration_image.png?raw=true",
                     "Text-1": "Task: Idealization, design, development, testing, deployment.",
                     "Text-2": "Time: 3 weeks. Below are a snapshot of what I did:",
                     "Text-3": "Distributed Sytem: Implemented with a Model-View-Controller architecture using PostgreSQL - Spring Boot (Java) - React (JavaScript)",
@@ -57,73 +57,52 @@
             },
             {
                 "type": "Project",
-                "title": "Age ",
-                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "title": "Age Prediction for Neonatal Brain Images ",
+                "shortDescription": "Age regression for neonatal brain images using the latent space from a VAE network. To enhance the effectiveness of the decoder for generation, I added a multi-attention head right after the latent layer.",
                 "fullDescription": {
-                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
-                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
-                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
-                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
-                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                    "GitHub": "https://github.com/dthung99/VAE_GAN_for_brain_MRI_images",
+                    "Text-1": "It is a multitask training. The VAE ensures that the network extracts only the meaningful features into the latent space.",
+                    "Text-2": "I later added a GAN (WGAN) network after the VAE. I learned that training a GAN is incredibly challenging, as my discriminator kept overfitting the data.",
+                    "Text-3": "I noticed that using only a CNN network, the generator could not produce a proper image due to spatial invariance. I added a multi-attention head layer after the latent space to introduce some spatial variance to the network, and it worked great!",
+                    "Image": "https://github.com/dthung99/VAE_GAN_for_brain_MRI_images/blob/main/images/Final_result.png?raw=true"
                 }
             },
             {
                 "type": "Project",
-                "title": "Liver Cancer Segmentation",
-                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "title": "Age Prediction for Neonatal Brain Images ",
+                "shortDescription": "",
                 "fullDescription": {
-                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
-                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
-                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
-                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
-                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                    "GitHub": "",
+                    "Text-1": "",
+                    "Text-2": "",
+                    "Text-3": "",
+                    "Image": ""
                 }
-            },            {
+            },
+            {
                 "type": "Project",
-                "title": "Liver Cancer Segmentation",
-                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "title": "Age Prediction for Neonatal Brain Images ",
+                "shortDescription": "",
                 "fullDescription": {
-                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
-                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
-                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
-                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
-                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                    "GitHub": "",
+                    "Text-1": "",
+                    "Text-2": "",
+                    "Text-3": "",
+                    "Image": ""
                 }
-            },            {
+            },
+            {
                 "type": "Project",
-                "title": "Liver Cancer Segmentation",
-                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
+                "title": "Age Prediction for Neonatal Brain Images ",
+                "shortDescription": "",
                 "fullDescription": {
-                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
-                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
-                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
-                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
-                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
-                }
-            },            {
-                "type": "Project",
-                "title": "Liver Cancer Segmentation",
-                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
-                "fullDescription": {
-                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
-                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
-                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
-                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
-                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
-                }
-            },            {
-                "type": "Project",
-                "title": "Liver Cancer Segmentation",
-                "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
-                "fullDescription": {
-                    "GitHub": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation",
-                    "Text-1": "To handle the large images, I applied multiple strategies such as down sampling, cropping, and performed parallel training on two GPUs (Kaggle). The first network I used was a pure CNN without any regularization. Later, I added batch normalization and a dropout layer.",
-                    "Text-2": "To address the small sample size, I performed augmentation with elastic deformations, added noise, and adjusted random contrast. For the data imbalance, I experimented with various loss functions, combining them to create my own custom loss function.",
-                    "Text-3": "I trained the network using free Kaggle GPU, which was quite challenging due to the limited GPU memory of about 15GB per GPU and only 30 hours per week.",
-                    "Image": "https://github.com/dthung99/U_Net_for_liver_tumor_segmentation/blob/main/images/final_prediction.png?raw=true"
+                    "GitHub": "",
+                    "Text-1": "",
+                    "Text-2": "",
+                    "Text-3": "",
+                    "Image": ""
                 }
             }
-
         ]
     },
     {

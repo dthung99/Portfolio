@@ -21,6 +21,11 @@
         padding: 0rem;
         border-bottom: 1px solid;
         margin-bottom: 1rem;
+
+        &:hover {
+            transform: scale(1.005);
+            cursor: pointer;
+        }
     }
 
     .flash-main-card-body {
@@ -30,5 +35,9 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+    }
+
+    .flash-main-card-body-index {
+        text-indent: 1rem;
     }
 }
