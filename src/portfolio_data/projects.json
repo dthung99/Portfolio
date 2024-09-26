@@ -6,6 +6,17 @@
         "projects": [
             {
                 "type": "Project",
+                "title": "My Portfolio Page",
+                "shortDescription": "You are looking at it! It's just a simple 2-day project built with React and some CI/CD. What I like about it is the scalable design that allows me to update my data in a .json file.",
+                "fullDescription": {
+                    "Link": "None",
+                    "GitHub": "https://github.com/dthung99/portfolio",
+                    "Image": "2",
+                    "Text": "2"
+                }
+            },
+            {
+                "type": "Project",
                 "title": "Seal Idea",
                 "shortDescription": "A project stemming from a silly idea. It is built with PostgreSQL, Spring Boot (Java), and React (JavaScript), following a basic distributed architecture (Model-View-Controller). I also created a CI/CD pipeline to automate deployment: GitHub → Docker → AWS.",
                 "fullDescription": {
@@ -23,17 +34,6 @@
                     "Text-9": "Website Features: Implemented multiple features: posting status, encrypting messages, personal list of posts, public API for developers.",
                     "Text-10": "AWS: Deployed SQL server on AWS RDS; back-end and front-end servers on two different ports of AWS EC2; established remote control for AWS services via SSH.",
                     "Text-11": "CI/CD: Created two pipelines with GitHub Actions to automate testing, inject deployment variables, build Docker containers, and deploy to AWS via SSH connection."
-                }
-            },
-            {
-                "type": "Project",
-                "title": "Project B",
-                "shortDescription": "Short description B",
-                "fullDescription": {
-                    "GitHub": "2",
-                    "Link": "2",
-                    "Image": "2",
-                    "Text": "2"
                 }
             }
         ]
