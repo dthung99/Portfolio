@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <ContextProvider>
-        <BrowserRouter basename="/Portfolio/">
+        <HashRouter basename="/">
           <div className="main_layout">
             <div className="main_layout_top"><NavBar /></div>
             <div className="main_layout_middle">
@@ -32,7 +32,7 @@ function App() {
               </Routes>
             </div>
           </div>
-        </BrowserRouter>
+        </HashRouter>
       </ContextProvider>
     </>
   )

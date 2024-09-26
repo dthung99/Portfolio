@@ -46,7 +46,7 @@
     border-radius: 1rem;
     width: 100%;
     background-color: $dark;
-    @extend .button_effect
+    @extend .button_effect;
 }
 
 .big-text {
