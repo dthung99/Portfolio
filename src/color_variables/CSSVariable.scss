@@ -5,6 +5,10 @@ $brand-primary: #010E0F;
 $brand-secondary: #011C1D; // #047072
 $brand-2: #422b46;
 $brand-3: #523d14;
+$concept_1: #2e4748;
+$concept_2: #414156;
+$concept_3: #364b44;
+$concept_4: #617c7d;
 
 // Cut off for dynamic changing of phone and computer view
 $screen_width_cut_off: 768px;
@@ -59,4 +63,9 @@ body {
   &:active {
     transform: scale(1.05);
   }
+}
+
+.remove_link_effect {
+  text-decoration: none; // Remove underline
+  color: inherit; // Use the inherited text color
 }

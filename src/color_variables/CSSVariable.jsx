@@ -7,6 +7,10 @@ export const CSSVariable = {
     brand_secondary: "#011C1D", // #047072
     brand_2: '#422b46',
     brand_3: '#523d14',
+    concept_1: '#2e4748',
+    concept_2: '#414156',
+    concept_3: '#364b44',
+    concept_4: '#617c7d',
     // Cut off for dynamic changing of phone and computer view
     screen_width_cut_off: 768,
     smallest_screen_width: 320,

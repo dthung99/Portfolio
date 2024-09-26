@@ -72,8 +72,10 @@
                 white-space: nowrap; // So it does not wrap
             }
 
-            .my_hover_target:hover+.my_hover_text {
-                display: flex; // Show the text when hovering over the target 
+            @media (hover: hover) and (pointer: fine) {
+                .my_hover_target:hover+.my_hover_text {
+                    display: flex; // Show the text when hovering over the target 
+                }
             }
         }
     }

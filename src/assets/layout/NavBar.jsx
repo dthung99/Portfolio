@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState, useRef } from 'react';
-import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Layers3, House, BriefcaseBusiness, AtSign } from 'lucide-react';
 import { CurrentPageContext } from '../../ContextProvider';
 
@@ -9,10 +9,10 @@ import './NavBar.scss';
 // Function for icon on small screen
 const IconButton = ({ IconComponent, path, label, color = 'inherit', icon_size = '2.5rem', ...props }) => {
   return (
-    <RouterLink to={path} className='nav-bar-small-item' style={{ padding: '0.5rem 0.5rem', backgroundColor: color }} {...props}>
+    <Link to={path} className='nav-bar-small-item' style={{ padding: '0.5rem 0.5rem', backgroundColor: color }} {...props}>
       <IconComponent size={icon_size} color={CSSVariable.light} strokeWidth={2} className='my_hover_target' />
       <div className='my_hover_text' style={{ right: '0%' }}> {label} </div>
-    </RouterLink>
+    </Link>
   );
 };
 
@@ -38,10 +38,10 @@ const NavBar = () => {
       <div className="nav-bar">
         <div className="web_name">Dang The Hung</div>
         <div className="nav-bar-big">
-          <RouterLink to='/' className="nav-bar-big-item" style={{ background: ColorForPage('/') }}>Home</RouterLink>
-          <RouterLink to='/Projects' className="nav-bar-big-item" style={{ background: ColorForPage('/Projects') }} >Projects</RouterLink>
-          <RouterLink to='/About' className="nav-bar-big-item" style={{ background: ColorForPage('/About') }}>About</RouterLink>
-          <RouterLink to='/Connect' className="nav-bar-big-item" style={{ background: ColorForPage('/Connect') }}>Connect</RouterLink>
+          <Link to='/' className="nav-bar-big-item" style={{ background: ColorForPage('/') }}>Home</Link>
+          <Link to='/Projects' className="nav-bar-big-item" style={{ background: ColorForPage('/Projects') }} >Projects</Link>
+          <Link to='/About' className="nav-bar-big-item" style={{ background: ColorForPage('/About') }}>About</Link>
+          <Link to='/Connect' className="nav-bar-big-item" style={{ background: ColorForPage('/Connect') }}>Connect</Link>
         </div>
         <div className="nav-bar-small">
           <IconButton IconComponent={House} path='/' label='Home' color={ColorForPage('/')} />

@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Home.scss'
+import { CSSVariable } from '../color_variables/CSSVariable';
 
 const FullSizeFlashcard = ({ title, description, ...props }) => {
     return (
@@ -21,7 +23,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="main-layout">
+            <div className="home-main-layout">
                 <div className="main-layout-intro">
                     <div className='intro-layout'>
                         <div className="big-intro-text">
@@ -39,18 +41,18 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="main-layout-grid">
-                    <div className="layout-item">
-                        <FullSizeFlashcard title={'My Projects'} description={myProjectsDescription} />
-                    </div>
-                    <div className="layout-item">
-                        <FullSizeFlashcard title={'About me'} description={aboutMeDescription} />
-                    </div>
-                    <div className="layout-item">
-                        <FullSizeFlashcard title={'Let\'s Connect'} description={letConnectDescription} />
-                    </div>
-                    <div className="layout-item">
+                    <Link to='/Projects' className="layout-item">
+                        <FullSizeFlashcard title={'My Projects'} description={myProjectsDescription} style={{ background: CSSVariable.concept_1 }} />
+                    </Link>
+                    <Link to='/About' className="layout-item">
+                        <FullSizeFlashcard title={'About me'} description={aboutMeDescription} style={{ background: CSSVariable.concept_2 }} />
+                    </Link>
+                    <Link to='/Connect' className="layout-item">
+                        <FullSizeFlashcard title={'Let\'s Connect'} description={letConnectDescription} style={{ background: CSSVariable.concept_3 }} />
+                    </Link>
+                    <Link className="layout-item">
                         <FullSizeFlashcard title={'...'} description={''} style={{ background: 'inherit' }} />
-                    </div>
+                    </Link>
                 </div>
             </div>
         </>

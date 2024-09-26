@@ -1,0 +1,65 @@
+@import "../color_variables/CSSVariable.scss";
+
+.connect-main-layout {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .connect-title {
+        font-size: 2rem;
+        width: 85%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .social_media {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+
+        .social_media-item {
+            @extend .button_effect;
+            height: 3rem;
+            padding: 0.5rem;
+        }
+    }
+
+    .connect-email {
+        margin-bottom: 1rem;
+
+        .email-link {
+            @extend .remove_link_effect;
+            text-decoration: underline;
+        }
+    }
+
+    .connect-label {
+        font-size: 1.2rem;
+    }
+
+    .connect-input-box {
+        width: 90%;
+        border: 1px solid $concept_4;
+        max-width: 50rem;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        background-color: rgba($color: #ffffff, $alpha: 0.1);
+        color: inherit;
+
+
+    }
+
+    .submit-button {
+        @extend .button_effect;
+        background-color: $concept_4;
+        border-radius: 0.5rem;
+        margin: 0.7rem;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+}
