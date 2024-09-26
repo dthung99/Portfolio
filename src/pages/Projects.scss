@@ -1,6 +1,19 @@
 @import "../color_variables/CSSVariable.scss";
 
-.main-layout {
-    // border: solid;
+.project-layout {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 0rem 1rem;
+    align-items: center;
+    justify-content: center;
+
+    .project-page-introduction-title {
+        font-size: 1.9rem;
+    }
+
+    .project-page-introduction-text {
+        font-size: 0.9rem;
+        text-align: center;
+    }
 }

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState, useRef } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Layers3, House, BriefcaseBusiness, AtSign } from 'lucide-react';
 import { CurrentPageContext } from '../../ContextProvider';

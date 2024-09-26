@@ -1,0 +1,54 @@
+@import "../../color_variables/CSSVariable.scss";
+
+.item-small-flash-card-layout {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 1px dashed rgba($color: #ffffff, $alpha: 0.5);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.25rem;
+
+    &:first-child {
+        padding-top: 0rem;
+    }
+
+
+    .small-flash-card-title {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .small-flash-card-body {
+        padding-left: 0.5rem;
+
+        .small-flash-card-item {
+            padding: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+
+            .small-flash-card-item-link {
+                color: inherit;
+            }
+
+            .small-flash-card-item-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .small-flash-card-item-text {
+                color: inherit;
+                line-height: 1.6;
+                font-family: Arial, Helvetica, sans-serif;
+                text-indent: 1rem;
+            }
+        }
+    }
+}

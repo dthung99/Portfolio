@@ -1,0 +1,65 @@
+[
+    {
+        "projectArea": "Software Engineering",
+        "projectAreaDescription": "All of my software engineering projects are self-taught. I was already quite familiar with programming and Linux before starting these, which allowed me to complete them in a relatively short amount of time.",
+        "colorConcept": "#ffffff0F",
+        "projects": [
+            {
+                "type": "Project",
+                "title": "Seal Idea",
+                "shortDescription": "A project stemming from a silly idea. It is built with PostgreSQL, Spring Boot (Java), and React (JavaScript), following a basic distributed architecture (Model-View-Controller). I also created a CI/CD pipeline to automate deployment: GitHub → Docker → AWS.",
+                "fullDescription": {
+                    "Link": "https://sealidea.com/",
+                    "GitHub": "https://github.com/dthung99/Seal_Idea",
+                    "Image": "https://github.com/dthung99/Seal_Idea/blob/main/images/illustration_image.png?raw=true",
+                    "Text-1": "Time: 3 weeks",
+                    "Text-2": "Task: Idealization, design, development, testing, deployment.",
+                    "Text-3": "Distributed Architecture: Model-View-Controller with PostgreSQL - Spring Boot (Java) - React (JavaScript)",
+                    "Text-4": "Network: Set up CORS to allow proxy traffic only from the front-end server; configured SSL certificates for HTTPS; established AWS VPC to allow only HTTPS traffic from users and forbid all other traffic to the backend or database.",
+                    "Text-5": "Security: Developed authentication features including registration, login, logout, and password changes; executed stateless authentication by distributing a signed JWT in user cookies.",
+                    "Text-6": "Databases: Designed a relational database schema with 3 tables (Accounts, Posts, and Personal Profile).",
+                    "Text-7": "Backend: Spring Boot using JPA (Hibernate) to interface with PostgreSQL and provide RESTful API for React (served on Nginx); integrated security functions with Spring Security.",
+                    "Text-8": "Frontend: Designed a high-performance, responsive multi-page UI in React (optimized for screens as small as 320px) with a natural workflow to enhance user experience; evaluated UI/UX on different browsers and devices.",
+                    "Text-9": "Website Features: Implemented multiple features: posting status, encrypting messages, personal list of posts, public API for developers.",
+                    "Text-10": "AWS: Deployed SQL server on AWS RDS; back-end and front-end servers on two different ports of AWS EC2; established remote control for AWS services via SSH.",
+                    "Text-11": "CI/CD: Created two pipelines with GitHub Actions to automate testing, inject deployment variables, build Docker containers, and deploy to AWS via SSH connection."
+                }
+            },
+            {
+                "type": "Project",
+                "title": "Project B",
+                "shortDescription": "Short description B",
+                "fullDescription": {
+                    "GitHub": "2",
+                    "Link": "2",
+                    "Image": "2",
+                    "Text": "2"
+                }
+            }
+        ]
+    },
+    {
+        "projectArea": "Artificial Intelligence",
+        "projectAreaDescription": "Lots of my projects in AI are actually focused on the mathematics. I don't have a specific reason; I just want to understand all the underlying principles.",
+        "colorConcept": "#ffffff0F",
+        "projects": [
+            {
+                "projectTitle": "Project A",
+                "shortDescription": "Short description A",
+                "fullDescription": "Full description A"
+            }
+        ]
+    },
+    {
+        "projectArea": "Robotics",
+        "projectAreaDescription": "These are my main optional modules in my MSc. They are amazing! They have provided me with a strong understanding of computer systems and valuable experience across multiple engineering disciplines.",
+        "colorConcept": "#ffffff0F",
+        "projects": [
+            {
+                "projectTitle": "Project A",
+                "shortDescription": "Short description A",
+                "fullDescription": "Full description A"
+            }
+        ]
+    }
+]

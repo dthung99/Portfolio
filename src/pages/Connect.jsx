@@ -32,22 +32,21 @@ const Connect = () => {
             </div>
             <div className="social_media">
                 <a href='https://www.linkedin.com/in/dthung'>
-                    <img src="linkedin.png" alt="Icon" className='social_media-item' />
+                    <img src="brand_icons/linkedin.png" alt="Icon" className='social_media-item' />
                 </a>
                 <a href='https://github.com/dthung99'>
-                    <img src="github-mark-white.png" alt="Icon" className='social_media-item' />
+                    <img src="brand_icons/github-mark-white.png" alt="Icon" className='social_media-item' />
                 </a>
                 <a href='https://scholar.google.com/citations?user=J3C7uvEAAAAJ'>
-                    <img src="googlescholar-color.svg" alt="Icon" className='social_media-item' />
+                    <img src="brand_icons/googlescholar-color.svg" alt="Icon" className='social_media-item' />
                 </a>
                 <a href='https://www.researchgate.net/profile/Hung-Dang-14'>
-                    <img src="researchgate-color.svg" alt="Icon" className='social_media-item' />
+                    <img src="brand_icons/researchgate-color.svg" alt="Icon" className='social_media-item' />
                 </a>
             </div>
             <div className="connect-email">
-                Email: &nbsp;
-                <a href="mailto:dthung.y17@gmail.com" className='email-link'>dthung.y17@gmail.com</a> &nbsp; | &nbsp;
-                <a href="mailto:the_hung.dang@kcl.ac.uk" className='email-link'>the_hung.dang@kcl.ac.uk</a>
+                <div href="mailto:dthung.y17@gmail.com" className='email-link'>dthung.y17@gmail.com</div>
+                <div href="mailto:the_hung.dang@kcl.ac.uk" className='email-link'>the_hung.dang@kcl.ac.uk</div>
             </div>
 
             <div className="connect-label">Name</div>

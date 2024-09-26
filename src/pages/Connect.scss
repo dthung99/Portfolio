@@ -28,9 +28,19 @@
     }
 
     .connect-email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
         margin-bottom: 1rem;
+        margin-top: -1rem;
+
+        @media (max-width: $screen_width_cut_off) {
+            flex-direction: column; // Collapse to one column on small screens
+        }
 
         .email-link {
+            margin: 0rem 0.5rem;
             @extend .remove_link_effect;
             text-decoration: underline;
         }

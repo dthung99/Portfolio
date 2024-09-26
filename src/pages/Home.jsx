@@ -7,7 +7,7 @@ import { CSSVariable } from '../color_variables/CSSVariable';
 const FullSizeFlashcard = ({ title, description, ...props }) => {
     return (
         <>
-            <div className="flash-card-layout" {...props} >
+            <div className="home-flash-card-layout" {...props} >
                 <div className="big-text">{title}</div>
                 <div className="small-text">{description}</div>
             </div>
