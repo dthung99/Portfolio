@@ -6,7 +6,7 @@ import workExperience from '../portfolio_data/workExperience.json';
 
 import MainFlashCard from '../assets/utils/MainFlashCard';
 
-import './about.scss';
+import './About.scss';
 
 const About = () => {
     return (
