@@ -2,11 +2,13 @@
 
 .item-main-flash-card-layout {
     width: 95%;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     border: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+    box-shadow: 0 0.5rem 0.5rem rgba(255, 255, 255, 0.05); // White shadow
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem 0rem;
@@ -26,6 +28,18 @@
             transform: scale(1.005);
             cursor: pointer;
         }
+
+        .flash-main-card-title-arrow {
+            color: inherit;
+
+        }
+
+        .flash-main-card-title-text {
+            color: inherit;
+            padding: 0rem 0.5rem;
+            text-align: center;
+        }
+
     }
 
     .flash-main-card-body {

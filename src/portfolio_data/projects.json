@@ -1,11 +1,12 @@
 [
     {
         "projectArea": "Software Engineering",
+        "defaultExpand": false,
         "projectAreaDescription": "All of my software engineering projects are self-taught. I was already quite familiar with programming and Linux before starting these, which allowed me to complete them in a relatively short amount of time.",
         "colorConcept": "#ffffff0F",
         "projects": [
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Seal Idea",
                 "shortDescription": "A project stemming from a silly idea. It is built with PostgreSQL, Spring Boot (Java), and React (JavaScript), following a basic distributed architecture (Model-View-Controller). I also created a CI/CD pipeline to automate deployment: GitHub → Docker → AWS.",
                 "fullDescription": {
@@ -26,7 +27,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "My Portfolio Page",
                 "shortDescription": "You are looking at it! It's just a simple 3-day project built with React and some CI/CD. What I like about it is the scalable design that allows me to update my data in a .json file.",
                 "fullDescription": {
@@ -40,11 +41,12 @@
     },
     {
         "projectArea": "Artificial Intelligence",
+        "defaultExpand": false,
         "projectAreaDescription": "Lots of my projects in AI are actually focused on the mathematics. I don't have a specific reason; I just want to understand all the underlying principles.",
         "colorConcept": "#ffffff0F",
         "projects": [
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Liver Cancer Segmentation",
                 "shortDescription": "Using U-Net for liver cancer segmentation. One of the challenges of this project is the small sample size (131 images), with each image being very large (512MB), along with the extreme imbalance of the cancer labels.",
                 "fullDescription": {
@@ -56,7 +58,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Age Prediction for Neonatal Brain Images ",
                 "shortDescription": "Age regression for neonatal brain images using the latent space from a VAE network. To enhance the effectiveness of the decoder for generation, I added a multi-attention head right after the latent layer.",
                 "fullDescription": {
@@ -68,7 +70,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Transformer",
                 "shortDescription": "Built a visual Swin Transformer from scratch for predicting the CIFAR-10 dataset. Most of the work involved building several multi-attention head layers and splitting the images into tokens.",
                 "fullDescription": {
@@ -80,7 +82,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "VAE",
                 "shortDescription": "An autoencoder network for the MNIST dataset, followed by a Variational Autoencoder (VAE) that forces the latent space to follow a normal distribution by minimizing the KL divergence.",
                 "fullDescription": {
@@ -93,7 +95,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "GAN",
                 "shortDescription": "I implemented a GAN network and a WGAN with Gradient Penalty. Unfortunately, I only completed the math and the coding; I did not finish training them.",
                 "fullDescription": {
@@ -101,7 +103,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "LSTM & GRU",
                 "shortDescription": "Building Long Short-Term Memory (LSTM) networks and Gated Recurrent Unit (GRU) networks from scratch to predict IBM's closing stock price over time. This project is primarily for understanding the architecture.",
                 "fullDescription": {
@@ -111,7 +113,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "U-Net",
                 "shortDescription": "U-Net for segmentation of brain MRI images. This project is primarily for understanding the architecture.",
                 "fullDescription": {
@@ -123,7 +125,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Resnet",
                 "shortDescription": "Resnet classification model for MNIST dataset. This project is primarily for understanding the architecture.",
                 "fullDescription": {
@@ -134,7 +136,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Stochastic Neural Network",
                 "shortDescription": "A Stochastic Neural Network.",
                 "fullDescription": {
@@ -144,7 +146,7 @@
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Backpropagation",
                 "shortDescription": "Going for the math! Implementing backpropagation with NumPy!",
                 "fullDescription": {
@@ -157,40 +159,48 @@
     },
     {
         "projectArea": "Robotics",
+        "defaultExpand": false,
         "projectAreaDescription": "These are my main optional modules in my MSc. They are amazing! They have provided me with a strong understanding of computer systems and valuable experience across multiple engineering disciplines.",
         "colorConcept": "#ffffff0F",
         "projects": [
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Stereo Tracking System",
-                "shortDescription": "It's actually 1/3 of my MSc thesis. The other part involves designing and manufacturing a concentric tube robot (I made a whole new one).",
+                "shortDescription": "A traditional computer vision project. It's actually 1/3 of my MSc thesis. The other part involves designing and manufacturing a concentric tube robot (I made a new one).",
                 "fullDescription": {
-                    "GitHub": "",
-                    "Text-1": "",
-                    "Text-2": "",
-                    "Image": ""
+                    "GitHub": "https://github.com/dthung99/Thesis_Concentric_Tube_Robot",
+                    "Text-1": "A little clarification: the main part of my thesis is the design and manufacturing of a concentric tube robot (yes, an entire robot - but it's a small one, haha). This involved conducting finite element analysis to design and fabricate the tube, as well as designing, 3D printing, and assembling an actuation system (both mechanical and electrical). All the information can be found in the report.",
+                    "Image-1": "https://github.com/dthung99/Thesis_Concentric_Tube_Robot/raw/main/images/robot.jpg",
+                    "Text-2": "I added the 3D tracking because I really wanted to learn about it and gain some coding experience in my thesis. I implemented it using ROS on a Linux computer.",
+                    "Text-3": "I developed the algorithm using traditional computer vision approaches: Gaussian Mixture Models-based background subtraction and color segmentation, along with epipolar geometry. Here is my algorithm:",
+                    "Image-2": "https://github.com/dthung99/Thesis_Concentric_Tube_Robot/raw/main/images/tracking_algorithm.png",
+                    "Text-4": "You can find the details in my GitHub repository and my final report.",
+                    "Text-5": "I also wrote a simulation for a simplified kinematics model of the concentric tube robot, but it's too much to mention here."
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Haptics Device",
-                "shortDescription": "",
+                "shortDescription": "A haptic device using the relation between motor torque and end-effector force: τ=J^T·F. To make it more challenging, I created software to generate a virtual environment, allowing the robot to simulate different environments in various locations.",
                 "fullDescription": {
-                    "GitHub": "",
-                    "Text-1": "",
-                    "Text-2": "",
-                    "Image": ""
+                    "GitHub": "https://github.com/dthung99/Advanced_Medical_Robotics_MSc_course",
+                    "Text-1": "It's actually not that difficult. The robot is a 3DOF planar robot (making it a redundant robot for my purposes) controlled with ROS. Because it's planar, the kinematics are well known and easy to estimate.",
+                    "Image": "https://github.com/dthung99/Advanced_Medical_Robotics_MSc_course/blob/main/images/robot.png?raw=true",
+                    "Text-2": "For the environment-generating software, I built a simple UI that allows users to determine where and what kind of environment to add from a predefined set. This information is then stored in a 3-dimensional tensor to send to ROS.",
+                    "Text-4": "I also developed a Jacobian-based control for the redundant robot (as an additional feature)."
                 }
             },
             {
-                "type": "Project",
+                "type": "General",
                 "title": "Drawing Robot",
-                "shortDescription": "",
+                "shortDescription": "A simple drawing robot with a PID controller implemented in Arduino and a kinematics solver in MATLAB, communicating via a serial buffer.",
                 "fullDescription": {
-                    "GitHub": "",
-                    "Text-1": "",
-                    "Text-2": "",
-                    "Image": ""
+                    "GitHub": "https://github.com/dthung99/Applied_Medical_Robotics_MSc_course",
+                    "Text-1": "For the PID controller, I went a little further by diving into control theory. I added anti-windup for the integral component and a derivative filter for the derivative component, making my PID robust. I also included a feedforward loop when controlling the speed.",
+                    "Text-2": "For the inverse kinematics, I solved it using both analytical and differential approaches.",
+                    "Text-3": "For serial communication, I transmitted the current and target motor angles between the two systems.",
+                    "Text-4": "Oh! I forgot to mention that the project also includes the design, 3D printing, and electronics assembly.",
+                    "Image": "https://github.com/dthung99/Applied_Medical_Robotics_MSc_course/raw/main/images/robot.jpg"
                 }
             }
         ]

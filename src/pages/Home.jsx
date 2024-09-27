@@ -50,7 +50,7 @@ const Home = () => {
                     <Link to='/Connect' className="layout-item">
                         <FullSizeFlashcard title={'Let\'s Connect'} description={letConnectDescription} style={{ background: CSSVariable.concept_3 }} />
                     </Link>
-                    <Link className="layout-item">
+                    <Link to='/ConnectHidden' className="layout-item">
                         <FullSizeFlashcard title={'...'} description={''} style={{ background: 'inherit' }} />
                     </Link>
                 </div>

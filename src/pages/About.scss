@@ -1,6 +1,6 @@
 @import "../color_variables/CSSVariable.scss";
 
-.project-layout {
+.about-layout {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -8,13 +8,13 @@
     align-items: center;
     justify-content: center;
 
-    .project-page-introduction-title {
+    .about-page-introduction-title {
         padding: 1rem 0rem;
         font-size: 1.9rem;
         text-align: center;
     }
 
-    .project-page-introduction-text {
+    .about-page-introduction-text {
         padding-bottom: 1rem;
         font-size: 0.9rem;
         text-align: center;

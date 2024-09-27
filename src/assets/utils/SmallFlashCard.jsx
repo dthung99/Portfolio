@@ -3,11 +3,11 @@ import { ChevronRight, ChevronDown } from 'lucide-react';
 
 import './SmallFlashCard.scss';
 
-const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescription, flashCardFullDescription, ...prop }) => {
+const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescription, flashCardFullDescription, expandStatus = false, ...prop }) => {
     // Variable to indicate the colapse state of the main flashcard
-    const [isMainExpand, setIsMainExpand] = useState(false);
+    const [isMainExpand, setIsMainExpand] = useState(expandStatus);
     const FullDescription = () => {
-        if (flashCardType === "Project") {
+        if (flashCardType === "General") {
             return (
                 <>
                     {Object.entries(flashCardFullDescription).map(([key, value]) => {
@@ -46,6 +46,32 @@ const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescripti
                                     />
                                 </div>
                             );
+                        } else if (key.startsWith("Publication")) {
+                            return (
+                                <div key={key} className='small-flash-card-item' href={value}>
+                                    &nbsp; <a href={value.url} className='small-flash-card-item-link'>{value.title}</a>
+                                </div>
+                            );
+                        } else if (key.startsWith("List")) {
+                            return (
+                                <div key={key} className='small-flash-card-item'>
+                                    <ul className='small-flash-card-item-list'>
+                                        {value.map((item, index) => (
+                                            <li style={{ marginLeft: '-0.5rem' }} key={index}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            );
+                        } else if (key.startsWith("Flex-Text")) {
+                            return (
+                                <div key={key} className='small-flash-card-item'>
+                                    <div className="small-flash-card-item-flex-text">
+                                        {value.map((item, index) => (
+                                            <div key={index}>{item}</div>
+                                        ))}
+                                    </div>
+                                </div>
+                            );
                         } else if (key.startsWith("Text")) {
                             return (
                                 <div key={key} className='small-flash-card-item'>
@@ -59,9 +85,9 @@ const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescripti
                     })}
                 </>
             );
-        } else {
-            return (<>Hung</>);
         }
+        return (<>No description is available!</>);
+
 
     };
 
@@ -69,8 +95,12 @@ const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescripti
         <>
             <div className="item-small-flash-card-layout" {...prop}>
                 <div className="small-flash-card-title" onClick={() => setIsMainExpand(!isMainExpand)}>
-                    {isMainExpand ? <ChevronDown /> : <ChevronRight />}
-                    &nbsp; {flashCardTitle}
+                    <div className="small-flash-card-title-arrow">
+                        {isMainExpand ? <ChevronDown /> : <ChevronRight />}
+                    </div>
+                    <div className="small-flash-card-title-text">
+                        {flashCardTitle}
+                    </div>
                 </div>
                 {isMainExpand ?
                     <div className="small-flash-card-body">

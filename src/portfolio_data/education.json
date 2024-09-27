@@ -1,0 +1,49 @@
+[
+    {
+        "area": "Education",
+        "defaultExpand": true,
+        "areaDescription": "A comprehensive list of my previous universities.",
+        "colorConcept": "#0000ff0F",
+        "educationHistory": [
+            {
+                "type": "General",
+                "defaultExpand": false,
+                "title": "King's College London - MSc",
+                "shortDescription": "Biomedical Engineering - First-class Honors (expected) - GPA: 7.9/10. The course focuses on AI and Robotics engineering in Medicine.",
+                "fullDescription": {
+                    "Text-1": "Healthcare Technologies - MSc",
+                    "Text-2": "It's a biomedical engineering course that focuses on AI and Robotics engineering in Medicine.",
+                    "Flex-Text-1": [
+                        "GPA: 7.9/10",
+                        "2023-2024"
+                    ],
+                    "Text-3": "First-class Honors",
+                    "Text-4": "Modules taken:",
+                    "List": [
+                        "Advanced Medical Robotics",
+                        "Advanced Machine Learning",
+                        "Image Guided Navigation for Robotics",
+                        "Engineering Principles for Bionics & Neurotechnology",
+                        "Applied Medical Robotics",
+                        "Medical Robotics: Theory and Applications",
+                        "Machine Learning for Healthcare Applications"
+                    ]
+                }
+            },
+            {
+                "type": "General",
+                "defaultExpand": false,
+                "title": "University of Medicine and Pharmacy at Ho Chi Minh City - MD",
+                "shortDescription": "Doctor of Medicine - Distinction - GPA: 3.25/4.0",
+                "fullDescription": {
+                    "Text-1": "It was the best medical school in my region and arguably the best, or at least the second best, in Vietnam.",
+                    "Flex-Text-1": [
+                        "GPA: 3.25/4.0",
+                        "2017-2023"
+                    ],
+                    "Text-2": "Distinction"
+                }
+            }
+        ]
+    }
+]

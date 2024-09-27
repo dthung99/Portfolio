@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Connect from './pages/Connect';
+import ConnectHidden from './pages/ConnectHidden';
 
 import NavBar from './assets/layout/NavBar';
 
@@ -28,6 +29,7 @@ function App() {
                 <Route path='/Projects' element={<Projects />} />
                 <Route path='/About' element={<About />} />
                 <Route path='/Connect' element={<Connect />} />
+                <Route path='/ConnectHidden' element={<ConnectHidden />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
             </div>

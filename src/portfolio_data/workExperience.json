@@ -1,0 +1,71 @@
+[
+    {
+        "area": "Work Experience",
+        "defaultExpand": true,
+        "areaDescription": "As a recent graduate, I don't have much work experience to showcase.",
+        "colorConcept": "#00ff7F0F",
+        "educationHistory": [
+            {
+                "type": "General",
+                "defaultExpand": false,
+                "title": "Online Research Club (ORC), Nagasaki, Japan",
+                "shortDescription": "Research Assistant & Data analyst | 2019 - 2023",
+                "fullDescription": {
+                    "Link": "https://www.onlineresearchclub.org/",
+                    "Text-1": "I worked voluntarily for Associate Professor Nguyen Tien Huy as a team leader and data analyst.",
+                    "Text-2": "My work included leading teams to organize systematic reviews and meta-analyses.",
+                    "Text-3": "I gained extensive teamwork and communication abilities, as well as leadership and management skills.",
+                    "Text-4": "I  was also an experienced data analyst, handling multiple analyses for the group and providing analytical strategies for some teams.",
+                    "Text-5": "This experience gave me valuable statistical skills and basic coding experience in R.",
+                    "Text-6": "I got 9 publications in Medicine, with 2 as the first author."
+                }
+            },
+            {
+                "type": "General",
+                "defaultExpand": false,
+                "title": "Publications",
+                "shortDescription": "All of my publications are from ORC.",
+                "fullDescription": {
+                    "Text-1": "First author:",
+                    "Publication-1": {
+                        "title": "The prevalence of Pfk13 polymorphism in malaria patients treated with artemisinin-based therapy: a systematic review and meta-analysis.",
+                        "url": "https://doi.org/10.1007/s00436-024-08203-3"
+                    },
+                    "Publication-2": {
+                        "title": "The efficacy and adverse effects of favipiravir on patients with COVID-19: A systematic review and meta-analysis of published clinical trials and observational studies.",
+                        "url": "https://doi.org/10.1016/j.ijid.2022.04.035"
+                    },
+                    "Text-2": "Coauthor:",
+                    "Publication-3": {
+                        "title": "Compound K: A systematic review of its anticancer properties and probable mechanisms.",
+                        "url": "https://doi.org/10.1111/fcp.12874"
+                    },
+                    "Publication-4": {
+                        "title": "Effectiveness of perindopril/amlodipine fixed-dose combination in the treatment of hypertension: a systematic review.",
+                        "url": "https://doi.org/10.3389/fphar.2023.1156655"
+                    },
+                    "Publication-5": {
+                        "title": "Efficacy of Kinesio Taping Compared to Other Treatment Modalities in Musculoskeletal Disorders: A Systematic Review and Meta-Analysis.",
+                        "url": "https://doi.org/10.1080/15438627.2021.1989432"
+                    },
+                    "Publication-6": {
+                        "title": "Factors associated with successful publication for systematic review protocol registration: an analysis of 397 registered protocols.",
+                        "url": "https://doi.org/10.1186/s13643-023-02210-8"
+                    },
+                    "Publication-7": {
+                        "title": "A Review of the In Vitro Inhibition of α-Amylase and α-Glucosidase by Chalcone Derivatives.",
+                        "url": "https://doi.org/10.7759/cureus.37267"
+                    },
+                    "Publication-8": {
+                        "title": "The role of nursing leadership in promoting evidence-based nursing practice.",
+                        "url": "https://doi.org/10.1016/j.profnurs.2023.06.007"
+                    },
+                    "Publication-9": {
+                        "title": "Exchange transfusion in the management of critical pertussis in young infants: a case series.",
+                        "url": "https://doi.org/10.1111/vox.13085"
+                    }
+                }
+            }
+        ]
+    }
+]

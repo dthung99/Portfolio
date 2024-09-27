@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
 
 import './Connect.scss'
 
-const Connect = () => {
+const ConnectHidden = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -25,8 +26,10 @@ const Connect = () => {
     return (
         <form ref={form} className='connect-main-layout' onSubmit={sendEmail}>
             <div className="connect-title">
-                Feel free to drop me an email or connect with me via social media!
+                Oops! You found the hidden page!
             </div>
+            <div className="connect-label">Feel free to send me a message!</div>
+            <br />
             <div className="social_media">
                 <a href='https://www.linkedin.com/in/dthung'>
                     <img src="brand_icons/linkedin.png" alt="Icon" className='social_media-item' />
@@ -40,24 +43,20 @@ const Connect = () => {
                 <a href='https://www.researchgate.net/profile/Hung-Dang-14'>
                     <img src="brand_icons/researchgate-color.svg" alt="Icon" className='social_media-item' />
                 </a>
+                <a href='https://www.facebook.com/dtHung99/'>
+                    <img src="brand_icons/Facebook_Logo_Primary.png" alt="Icon" className='social_media-item' />
+                </a>
             </div>
             <div className="connect-email">
                 <div href="mailto:dthung.y17@gmail.com" className='email-link'>dthung.y17@gmail.com</div>
                 <div href="mailto:the_hung.dang@kcl.ac.uk" className='email-link'>the_hung.dang@kcl.ac.uk</div>
             </div>
+            <Link to='/' className="connect-title" style={{ color: 'blue' }}>
+                Back to Home!
+            </Link>
 
-            <div className="connect-label">Name</div>
-            <input className="connect-input-box" type="text" name="user_name" placeholder="Your name" />
-
-            <div className="connect-label">Email</div>
-            <input className="connect-input-box" type="email" name="user_email" placeholder="Your email" />
-
-            <div className="connect-label">Message</div>
-            <textarea className="connect-input-box" rows={10} name="message" placeholder="Your message" />
-
-            <input type="submit" value="Send Message" className="submit-button" />
         </form>
     );
 };
 
-export default Connect;
+export default ConnectHidden;
