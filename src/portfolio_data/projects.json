@@ -28,7 +28,7 @@
             {
                 "type": "Project",
                 "title": "My Portfolio Page",
-                "shortDescription": "You are looking at it! It's just a simple 2-day project built with React and some CI/CD. What I like about it is the scalable design that allows me to update my data in a .json file.",
+                "shortDescription": "You are looking at it! It's just a simple 3-day project built with React and some CI/CD. What I like about it is the scalable design that allows me to update my data in a .json file.",
                 "fullDescription": {
                     "Link": "https://dthung.xyz/",
                     "GitHub": "https://github.com/dthung99/portfolio",
@@ -69,38 +69,88 @@
             },
             {
                 "type": "Project",
-                "title": "Age Prediction for Neonatal Brain Images ",
-                "shortDescription": "",
+                "title": "Transformer",
+                "shortDescription": "Built a visual Swin Transformer from scratch for predicting the CIFAR-10 dataset. Most of the work involved building several multi-attention head layers and splitting the images into tokens.",
                 "fullDescription": {
-                    "GitHub": "",
-                    "Text-1": "",
-                    "Text-2": "",
-                    "Text-3": "",
-                    "Image": ""
+                    "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/Transformer_from_scratch",
+                    "Text-1": "Why didn't I try it on some text? Because I don't have the GPU and a large body of text data for it.",
+                    "Text-2": "I did this because I wanted to learn about the attention mechanism.",
+                    "Text-3": "You know what people say: 'Attention Is All You Need!'",
+                    "Image": "https://github.com/dthung99/AI_small_project/blob/main/Transformer_from_scratch/image/result.png?raw=true"
                 }
             },
             {
                 "type": "Project",
-                "title": "Age Prediction for Neonatal Brain Images ",
-                "shortDescription": "",
+                "title": "VAE",
+                "shortDescription": "An autoencoder network for the MNIST dataset, followed by a Variational Autoencoder (VAE) that forces the latent space to follow a normal distribution by minimizing the KL divergence.",
                 "fullDescription": {
-                    "GitHub": "",
-                    "Text-1": "",
-                    "Text-2": "",
-                    "Text-3": "",
-                    "Image": ""
+                    "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/VAE_variational_autoencoder_from_scratch",
+                    "Text": "I mainly just want to learn the Maths.",
+                    "Text-1": "Recontructed image:",
+                    "Image-1-50%": "https://github.com/dthung99/AI_small_project/blob/main/VAE_variational_autoencoder_from_scratch/images/generated_image.png?raw=true",
+                    "Text-2": "Original image:",
+                    "Image-2-50%": "https://github.com/dthung99/AI_small_project/blob/main/VAE_variational_autoencoder_from_scratch/images/raw_image.png?raw=true"
                 }
             },
             {
                 "type": "Project",
-                "title": "Age Prediction for Neonatal Brain Images ",
-                "shortDescription": "",
+                "title": "GAN",
+                "shortDescription": "I implemented a GAN network and a WGAN with Gradient Penalty. Unfortunately, I only completed the math and the coding; I did not finish training them.",
                 "fullDescription": {
-                    "GitHub": "",
-                    "Text-1": "",
-                    "Text-2": "",
-                    "Text-3": "",
-                    "Image": ""
+                    "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/WGAN_Wasserstein_Generative_Adversarial_Network_from_scratch"
+                }
+            },
+            {
+                "type": "Project",
+                "title": "LSTM & GRU",
+                "shortDescription": "Building Long Short-Term Memory (LSTM) networks and Gated Recurrent Unit (GRU) networks from scratch to predict IBM's closing stock price over time. This project is primarily for understanding the architecture.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/LSTM_and_GRU_from_scratch",
+                    "Text": "It's mainly for understanding the math.",
+                    "Image": "https://github.com/dthung99/AI_small_project/blob/main/LSTM_and_GRU_from_scratch/images/result.png?raw=true"
+                }
+            },
+            {
+                "type": "Project",
+                "title": "U-Net",
+                "shortDescription": "U-Net for segmentation of brain MRI images. This project is primarily for understanding the architecture.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/U-net_from_scratch",
+                    "Text-1": "I built a U-net with 4 downsampling, 4 upsampling layers and skip connections between them.",
+                    "Text-2": "Loss function: generalized dice loss.",
+                    "Text-3": "Other details are given in the GitHub repository.",
+                    "Image": "https://github.com/dthung99/AI_small_project/blob/main/U-net_from_scratch/images/result.png?raw=true"
+                }
+            },
+            {
+                "type": "Project",
+                "title": "Resnet",
+                "shortDescription": "Resnet classification model for MNIST dataset. This project is primarily for understanding the architecture.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/Resnet_from_scratch",
+                    "Text-1": "I Built a Resnet model with 4 residual layer, each one has 3 residual block with the first block downsampling and increasing the number of channels.",
+                    "Text-2": "Loss function: cross entropy loss.",
+                    "Image": "https://github.com/dthung99/AI_small_project/blob/main/Resnet_from_scratch/images/result.png?raw=true"
+                }
+            },
+            {
+                "type": "Project",
+                "title": "Stochastic Neural Network",
+                "shortDescription": "A Stochastic Neural Network.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/Stochastic_Neural_Network_from_scratch",
+                    "Text-1": "It's essentially a network with a dropout layer that persists in the final model. There is actually another approach involving Variational Bayesian inference, but I couldn't finish that.",
+                    "Text-2": "It's actually been so long that I don't remember exactly what Variational Bayesian inference means. However, it's somewhat similar to Bayesian inference, except that you simplify the calculations by assuming that the weights follow a normal distribution given the data."
+                }
+            },
+            {
+                "type": "Project",
+                "title": "Backpropagation",
+                "shortDescription": "Going for the math! Implementing backpropagation with NumPy!",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/Three_layer_Neural_network_from_scratch",
+                    "Text-1": "PyTorch facilitates deep learning by keeping track of the computational graph, so backpropagation is not a problem when working with PyTorch.",
+                    "Text-2": "To grasp the basics, I learned how to implement it using NumPy."
                 }
             }
         ]
@@ -111,9 +161,37 @@
         "colorConcept": "#ffffff0F",
         "projects": [
             {
-                "projectTitle": "Project A",
-                "shortDescription": "Short description A",
-                "fullDescription": "Full description A"
+                "type": "Project",
+                "title": "Stereo Tracking System",
+                "shortDescription": "It's actually 1/3 of my MSc thesis. The other part involves designing and manufacturing a concentric tube robot (I made a whole new one).",
+                "fullDescription": {
+                    "GitHub": "",
+                    "Text-1": "",
+                    "Text-2": "",
+                    "Image": ""
+                }
+            },
+            {
+                "type": "Project",
+                "title": "Haptics Device",
+                "shortDescription": "",
+                "fullDescription": {
+                    "GitHub": "",
+                    "Text-1": "",
+                    "Text-2": "",
+                    "Image": ""
+                }
+            },
+            {
+                "type": "Project",
+                "title": "Drawing Robot",
+                "shortDescription": "",
+                "fullDescription": {
+                    "GitHub": "",
+                    "Text-1": "",
+                    "Text-2": "",
+                    "Image": ""
+                }
             }
         ]
     }
