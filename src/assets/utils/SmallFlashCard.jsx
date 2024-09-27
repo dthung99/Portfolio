@@ -52,6 +52,12 @@ const SmallFlashCard = ({ flashCardType, flashCardTitle, flashCardShortDescripti
                                     &nbsp; <a href={value.url} className='small-flash-card-item-link'>{value.title}</a>
                                 </div>
                             );
+                        } else if (key.startsWith("OnlineCourse")) {
+                            return (
+                                <div key={key} className='small-flash-card-item' href={value}>
+                                    &nbsp; {value.name}: <a href={value.link} className='small-flash-card-item-link'>Link</a>
+                                </div>
+                            );
                         } else if (key.startsWith("List")) {
                             return (
                                 <div key={key} className='small-flash-card-item'>

@@ -43,6 +43,83 @@
                     ],
                     "Text-2": "Distinction"
                 }
+            },
+            {
+                "type": "General",
+                "defaultExpand": false,
+                "title": "Online Courses",
+                "shortDescription": "A list of online courses I took that serves as proof of my willingness to learn.",
+                "fullDescription": {
+                    "Text-1": "As I transitioned from medicine to engineering, I took quite a number of courses, nearly all of which were heavily focused on mathematics:",
+                    "OnlineCourse1": {
+                        "name": "Linear Algebra - Foundations to Frontiers | UTAustinX",
+                        "link": "https://learning.edx.org/course/course-v1:UTAustinX+UT.5.05x+1T2022/home"
+                    },
+                    "OnlineCourse2": {
+                        "name": "Multivariable calculus | Khan Academy",
+                        "link": "https://www.khanacademy.org/math/multivariable-calculus"
+                    },
+                    "OnlineCourse3": {
+                        "name": "Differential Equations Part I Basic Theory | KAIST",
+                        "link": "https://www.coursera.org/learn/ordinary-differential-equations"
+                    },
+                    "OnlineCourse4": {
+                        "name": "Differential Equations Part II Series Solutions | KAIST",
+                        "link": "https://www.coursera.org/learn/introduction-to-ordinary-differential-equations-part-2"
+                    },
+                    "OnlineCourse5": {
+                        "name": "Differential Equations Part III Systems of Equations | KAIST",
+                        "link": "https://www.coursera.org/learn/differential-equations-part-iii-systems-of-equations"
+                    },
+                    "OnlineCourse6": {
+                        "name": "Statistics and probability | Khan Academy",
+                        "link": "https://www.khanacademy.org/math/statistics-probability"
+                    },
+                    "OnlineCourse7": {
+                        "name": "Rice University: Mechanics, Part 1 | Rice",
+                        "link": "https://www.edx.org/learn/math/rice-university-introduction-to-mechanics-part-1"
+                    },
+                    "OnlineCourse8": {
+                        "name": "Rice University: Mechanics, Part 2 | Rice",
+                        "link": "https://www.edx.org/learn/physics/rice-university-mechanics-part-2-2"
+                    },
+                    "OnlineCourse9": {
+                        "name": "Rice University: Electricity and Magnetism, Part 1 | Rice",
+                        "link": "https://www.edx.org/learn/physics/rice-university-electricity-and-magnetism-part-1"
+                    },
+                    "OnlineCourse10": {
+                        "name": "Rice University: Electricity and Magnetism, Part 2 | Rice",
+                        "link": "https://www.edx.org/learn/physics/rice-university-electricity-magnetism-part-2"
+                    },
+                    "OnlineCourse11": {
+                        "name": "Mathematical Optimization for Engineers | RWTH",
+                        "link": "https://www.edx.org/learn/math/rwth-aachen-university-mathematical-optimization-for-engineers"
+                    },
+                    "OnlineCourse12": {
+                        "name": "Electrical engineering | Khan Academy",
+                        "link": "https://www.khanacademy.org/science/electrical-engineering"
+                    },
+                    "OnlineCourse13": {
+                        "name": "Digital Signal Processing Specialization | EPFL",
+                        "link": "https://www.coursera.org/specializations/digital-signal-processing"
+                    },
+                    "OnlineCourse14": {
+                        "name": "Fundamentals of Materials Science | Shanghai Jiao Tong University",
+                        "link": "https://www.coursera.org/learn/fundamentals-of-materials-science"
+                    },
+                    "OnlineCourse15": {
+                        "name": "CS50's Introduction to Computer Science | Harvard",
+                        "link": "https://learning.edx.org/course/course-v1:HarvardX+CS50+X"
+                    },
+                    "OnlineCourse16": {
+                        "name": "Data Structures and Algorithms Specialization | UCSanDiego",
+                        "link": "https://www.coursera.org/specializations/data-structures-algorithms"
+                    },
+                    "OnlineCourse17": {
+                        "name": "Introduction to Application Development Specialization | LearnQuest",
+                        "link": "https://www.coursera.org/specializations/beginning-application-developer"
+                    }
+                }
             }
         ]
     }
