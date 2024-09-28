@@ -36,6 +36,18 @@
                     "Image25%": "https://github.com/dthung99/Portfolio/blob/main/screenshot_images/illustration_image.jpg?raw=true",
                     "Text": "The page is hosted on GitHub Pages. It took me 2 days to learn and complete all the design, development, and deployment. There are two .json files that I can update to add new projects dynamically. Cool, isn't it?"
                 }
+            },
+            {
+                "type": "General",
+                "title": "Path Planning Software",
+                "shortDescription": "A software that takes in 3D brain volume, converts it to a 3D mesh, and identifies the optimal surgical path for electrode insertion. It's a project from my MSc coursework.",
+                "fullDescription": {
+                    "GitHub": "https://github.com/dthung99/Image_guided_Navigation_for_Robotics_MSc_course",
+                    "Image": "https://github.com/dthung99/Image_guided_Navigation_for_Robotics_MSc_course/blob/main/images/illustration.png?raw=true",
+                    "Text-1": "I created a 3D slicer extension that takes in 3D brain volume, converts it to a 3D mesh, and identifies the optimal surgical path. The software was developed using a test-driven development approach, with 100% test coverage.",
+                    "Text-2": "The requirements for the path include accessing the targeted area, avoiding and maximizing distance to critical structures, and maintaining an acceptable angle with respect to the entry surface.",
+                    "Text-3": "After that, the path is streamed via a TCP/IP protocol to ROS for simulation. I wrote a another software in ROS to simulate the robot's movement for needle insertion."
+                }
             }
         ]
     },
