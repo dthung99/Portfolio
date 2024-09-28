@@ -15,6 +15,10 @@
         padding-top: 0rem;
     }
 
+    &:hover {
+        cursor: pointer;
+    }
+
 
     .small-flash-card-title {
         width: 100%;
@@ -43,6 +47,10 @@
     .small-flash-card-body {
         padding-left: 0.5rem;
         width: 100%;
+
+        &:hover {
+            cursor: auto;
+        }
 
         .small-flash-card-item {
             padding: 0;
@@ -87,6 +95,11 @@
 
     .small-flash-card-body-index {
         text-indent: 1rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
     }
 
 }

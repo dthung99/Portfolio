@@ -11,7 +11,7 @@ const MainFlashCard = ({ title, shortDescription, bodyData, expandStatus = false
 
     return (
         <>
-            <div className="item-main-flash-card-layout" {...prop}>
+            <div className="item-main-flash-card-layout" onClick={() => { if (!isMainExpand) { setIsMainExpand(true) } }} {...prop}>
                 <div className="flash-main-card-title" onClick={() => setIsMainExpand(!isMainExpand)}>
                     <div className="flash-main-card-title-arrow">
                         {isMainExpand ? <CircleChevronDown /> : <CircleChevronRight />}

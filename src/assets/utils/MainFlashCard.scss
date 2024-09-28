@@ -53,5 +53,11 @@
 
     .flash-main-card-body-index {
         text-indent: 1rem;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
+
+
 }
