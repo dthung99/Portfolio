@@ -22,6 +22,7 @@
             @extend .remove_link_effect;
             display: flex;
             min-height: 25vh;
+            padding: 1rem 1rem;
         }
     }
 }
@@ -42,11 +43,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 0rem;
     border-radius: 1rem;
     width: 100%;
     background-color: $dark;
     @extend .button_effect;
+    padding: 0rem;
 }
 
 .big-text {

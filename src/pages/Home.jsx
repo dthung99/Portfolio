@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import './Home.scss'
 import { CSSVariable } from '../color_variables/CSSVariable';
 
-const FullSizeFlashcard = ({ title, description, ...props }) => {
+const FullSizeFlashcard = ({ link, title, description, ...props }) => {
     return (
         <>
-            <div className="home-flash-card-layout" {...props} >
+            <Link to={link} className="home-flash-card-layout" {...props} >
                 <div className="big-text">{title}</div>
                 <div className="small-text">{description}</div>
-            </div>
+            </Link>
         </>
     );
 };
@@ -41,18 +41,18 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="main-layout-grid">
-                    <Link to='/Projects' className="layout-item">
-                        <FullSizeFlashcard title={'My Projects'} description={myProjectsDescription} style={{ background: CSSVariable.concept_1 }} />
-                    </Link>
-                    <Link to='/About' className="layout-item">
-                        <FullSizeFlashcard title={'About me'} description={aboutMeDescription} style={{ background: CSSVariable.concept_2 }} />
-                    </Link>
-                    <Link to='/Connect' className="layout-item">
-                        <FullSizeFlashcard title={'Let\'s Connect'} description={letConnectDescription} style={{ background: CSSVariable.concept_3 }} />
-                    </Link>
-                    <Link to='/ConnectHidden' className="layout-item">
-                        <FullSizeFlashcard title={'...'} description={''} style={{ background: 'inherit' }} />
-                    </Link>
+                    <div className="layout-item">
+                        <FullSizeFlashcard link={'/Projects'} title={'My Projects'} description={myProjectsDescription} style={{ background: CSSVariable.concept_1 }} />
+                    </div>
+                    <div className="layout-item">
+                        <FullSizeFlashcard link={'/About'} title={'About me'} description={aboutMeDescription} style={{ background: CSSVariable.concept_2 }} />
+                    </div>
+                    <div className="layout-item">
+                        <FullSizeFlashcard link={'/Connect'} title={'Let\'s Connect'} description={letConnectDescription} style={{ background: CSSVariable.concept_3 }} />
+                    </div>
+                    <div className="layout-item">
+                        <FullSizeFlashcard link={'/ConnectHidden'} title={'...'} description={''} style={{ background: 'inherit' }} />
+                    </div>
                 </div>
             </div>
         </>
