@@ -84,7 +84,7 @@
             {
                 "type": "General",
                 "title": "Transformer",
-                "shortDescription": "Built a visual Swin Transformer from scratch for predicting the CIFAR-10 dataset. Most of the work involved building several multi-attention head layers and splitting the images into tokens.",
+                "shortDescription": "I built a visual Swin Transformer from scratch for predicting the CIFAR-10 dataset. Most of the work involved building several multi-attention head layers and splitting the images into tokens.",
                 "fullDescription": {
                     "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/Transformer_from_scratch",
                     "Text-1": "Why didn't I try it on some text? Because I don't have the GPU and a large body of text data for it.",
@@ -150,7 +150,7 @@
             {
                 "type": "General",
                 "title": "Stochastic Neural Network",
-                "shortDescription": "A Stochastic Neural Network.",
+                "shortDescription": "I built a Stochastic Neural Network using the Monte Carlo method.",
                 "fullDescription": {
                     "GitHub": "https://github.com/dthung99/AI_small_project/tree/main/Stochastic_Neural_Network_from_scratch",
                     "Text-1": "It's essentially a network with a dropout layer that persists in the final model. There is actually another approach involving Variational Bayesian inference, but I couldn't finish that.",
