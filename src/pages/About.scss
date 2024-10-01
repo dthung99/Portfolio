@@ -15,8 +15,19 @@
     }
 
     .about-page-introduction-text {
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
         font-size: 0.9rem;
         text-align: center;
+    }
+
+    .about-page-introduction-note {
+        text-align: center;
+
+        .about-page-introduction-text {
+            display: block;
+            flex-direction: row;
+            font-size: 0.9rem;
+        }
+
     }
 }

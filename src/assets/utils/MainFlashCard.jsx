@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CircleChevronRight, CircleChevronDown } from 'lucide-react';
+import { ChevronRight, ChevronDown } from 'lucide-react';
 
 import SmallFlashCard from './SmallFlashCard';
 
@@ -14,7 +14,7 @@ const MainFlashCard = ({ title, shortDescription, bodyData, expandStatus = false
             <div className="item-main-flash-card-layout" onClick={() => { if (!isMainExpand) { setIsMainExpand(true) } }} {...prop}>
                 <div className="flash-main-card-title" onClick={() => setIsMainExpand(!isMainExpand)}>
                     <div className="flash-main-card-title-arrow">
-                        {isMainExpand ? <CircleChevronDown /> : <CircleChevronRight />}
+                        {isMainExpand ? <ChevronDown /> : <ChevronRight />}
                     </div>
                     <div className="flash-main-card-title-text">
                         {title}
