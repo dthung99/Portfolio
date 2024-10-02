@@ -9,15 +9,15 @@
                 "type": "General",
                 "defaultExpand": false,
                 "title": "King's College London - MSc",
-                "shortDescription": "Biomedical Engineering - First-class Honors (expected) - GPA: 7.9/10. The course focuses on AI and Robotics engineering in Medicine.",
+                "shortDescription": "Biomedical Engineering - Distinction (Expected) - GPA: 8.0/10. The course focuses on AI and Robotics engineering in Medicine.",
                 "fullDescription": {
                     "Text-1": "Healthcare Technologies - MSc",
                     "Text-2": "It's a biomedical engineering course that focuses on AI and Robotics engineering in Medicine.",
                     "Flex-Text-1": [
-                        "GPA: 7.9/10",
+                        "GPA: 8.0/10",
                         "2023-2024"
                     ],
-                    "Text-3": "First-class Honors",
+                    "Text-3": "Distinction",
                     "Text-4": "Modules taken:",
                     "List": [
                         "Advanced Medical Robotics",
