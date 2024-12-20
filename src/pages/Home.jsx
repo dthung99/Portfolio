@@ -30,7 +30,7 @@ const Home = () => {
                             Hi, I'm Hung. You can call me Evan.
                         </div>
                         <div className="small-intro-text" style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>
-                            I’m a software engineer - or at least I aspire to be one.
+                            Welcome to my website!
                         </div>
                         <div className="small-intro-text" style={{ fontSize: '0.75rem' }}>
                             I have quite a unique background. I earned my MD degree in Vietnam but later decided to switch to engineering.
