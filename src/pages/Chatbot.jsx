@@ -67,29 +67,31 @@ const Chatbot = () => {
 
     return (
         <>
-            <div className="chatbot-container">
-                <div className="chat-window" ref={chatWindowRef}>
-                    {chatbotMsg.map((msg, index) => (
-                        <div key={index} className={msg.role}>
-                            {msg.content}
-                        </div>
-                    ))}
-                    {isLoading &&
-                        <div className="assistant">
-                            loading...
-                        </div>
-                    }
-                </div>
-                <div className="chat-window-bottom">
-                    <input
-                        className='chat-input'
-                        type="text"
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                        placeholder="Type a message..."
-                    />
-                    <button className='chat-input-send-button' onClick={handleSend}>Send</button>
+            <div className="chatbot-big-container">
+                <div className="chatbot-container">
+                    <div className="chat-window" ref={chatWindowRef}>
+                        {chatbotMsg.map((msg, index) => (
+                            <div key={index} className={msg.role}>
+                                {msg.content}
+                            </div>
+                        ))}
+                        {isLoading &&
+                            <div className="assistant">
+                                loading...
+                            </div>
+                        }
+                    </div>
+                    <div className="chat-window-bottom">
+                        <input
+                            className='chat-input'
+                            type="text"
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+                            placeholder="Type a message..."
+                        />
+                        <button className='chat-input-send-button' onClick={handleSend}>Send</button>
+                    </div>
                 </div>
             </div>
         </>
