@@ -88,7 +88,7 @@ const Chatbot = () => {
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                            placeholder="Type a message..."
+                            placeholder="Message..."
                         />
                         <button className='chat-input-send-button' onClick={handleSend}>Send</button>
                     </div>

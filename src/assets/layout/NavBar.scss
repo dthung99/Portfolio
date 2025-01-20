@@ -5,8 +5,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    justify-content: flex-start;
+
+    @media (max-width: $screen_width_cut_off) {
+        justify-content: flex-end;
+    }
 
     .web_name {
+        flex-grow: 1;
         padding-left: 4rem;
         display: flex;
         flex-direction: row;
@@ -15,7 +21,7 @@
         font-size: 2rem;
 
         @media (max-width: $screen_width_cut_off) {
-            color: transparent;
+            display: none;
             font-size: 0rem;
         }
 

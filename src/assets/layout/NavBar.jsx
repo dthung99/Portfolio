@@ -46,7 +46,7 @@ const NavBar = () => {
         </div>
         <div className="nav-bar-small">
           <IconButton IconComponent={House} path='/' label='Home' color={ColorForPage('/')} />
-          <IconButton IconComponent={BotMessageSquare} path='/Chatbot' label='Home' color={ColorForPage('/Chatbot')} />
+          <IconButton IconComponent={BotMessageSquare} path='/Chatbot' label='Chatbot' color={ColorForPage('/Chatbot')} />
           <IconButton IconComponent={Layers3} path='/Projects' label='Projects' color={ColorForPage('/Projects')} />
           <IconButton IconComponent={BriefcaseBusiness} path='/About' label='About' color={ColorForPage('/About')} />
           <IconButton IconComponent={AtSign} path='/Connect' label='Connect' color={ColorForPage('/Connect')} />
