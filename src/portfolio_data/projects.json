@@ -28,6 +28,21 @@
             },
             {
                 "type": "General",
+                "title": "Protein 3D Structure Search",
+                "shortDescription": "A simple website where you can enter a protein name to visualize its information and 3D model. It is built with React (TypeScript) + Node (JavaScript) and it hosted on AWS S3 + Lambda.",
+                "fullDescription": {
+                    "Link": "https://proteinsearch.dthung.com/",
+                    "GitHub": "https://github.com/dthung99/Protein_3D_Search",
+                    "Image50%": "https://github.com/dthung99/Protein_3D_Search/blob/main/images/image_1.png?raw=true",
+                    "Text-1": "Task: Building data pipelines, developing both the front end and back end, and deploying the application on AWS.",
+                    "Text-2": "Time: 2 days.",
+                    "Text-3": "I built a data pipeline with Apache Beam (Python) to migrate 20,000+ records from a Google Cloud Bucket to an AWS RDS PostgreSQL and scrap their 3D structures from other websites’ REST APIs.",
+                    "Text-4": "I built the website front-end with React (TypeScript) on AWS S3 + CloudFront and back-end with Node (JavaScript) on AWS Lambda + API Gateway.",
+                    "Text-5": "Initially, I built it with Flask and hosted it on EC2, but later I switched to AWS Lambda for more cost-effective operation."
+                }
+            },
+            {
+                "type": "General",
                 "title": "My Portfolio Page",
                 "shortDescription": "You are looking at it! It's just a simple 3-day project built with React and some CI/CD. What I like about it is the scalable design that allows me to update my data in a .json file.",
                 "fullDescription": {

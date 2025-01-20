@@ -1,0 +1,64 @@
+@import "../color_variables/CSSVariable.scss";
+
+.chatbot-container {
+    width: 100%;
+    margin: 1rem;
+    height: calc(100vh - 11rem);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    .chat-window {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        scrollbar-color: $concept_4 $concept_1;
+        scrollbar-width: thin;
+
+        .user {
+            text-align: right;
+            color: mix(green, $light, 40%);
+            padding: 0.5rem;
+        }
+
+        .assistant {
+            text-align: left;
+            color: $light;
+            background-color: rgba($color: #ffffff, $alpha: 0.03);
+            padding: 0.5rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .chat-window-bottom {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+
+        .chat-input {
+            flex-grow: 1;
+            font-size: 1.2rem;
+            border: 1px solid $concept_4;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            border-top: none;
+            margin-right: 0.5rem;
+            background-color: rgba($color: #ffffff, $alpha: 0.1);
+            color: inherit;
+
+            &:focus {
+                border-color: rgba($color: #ffffff, $alpha: 0.6); // Change this to your desired active border color
+                outline: none; // Optional: removes default outline
+            }
+        }
+
+        .chat-input-send-button {
+            @extend .button_effect;
+            background-color: $concept_4;
+            font-size: 1.2rem;
+            border-radius: 1rem;
+            padding: 0.5rem;
+        }
+    }
+}

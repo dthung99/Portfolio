@@ -16,7 +16,7 @@ const FullSizeFlashcard = ({ link, title, description, ...props }) => {
 };
 
 const Home = () => {
-    const introduction = 'Hi, I\'m Hung. You can call me Evan.';
+    const chatbotDescription = 'Ask My AI Assistant Anything About Me!';
     const myProjectsDescription = 'I\'m a curious and eager learner, which is why you could find a lot of projects in various areas.';
     const aboutMeDescription = 'A little information about my education and work experiences.';
     const letConnectDescription = '';
@@ -41,6 +41,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="main-layout-grid">
+                    <div className="layout-item">
+                        <FullSizeFlashcard link={'/Chatbot'} title={'Talk With My Chatbot!'} description={chatbotDescription} style={{ background: CSSVariable }} />
+                    </div>
                     <div className="layout-item">
                         <FullSizeFlashcard link={'/Projects'} title={'My Projects'} description={myProjectsDescription} style={{ background: CSSVariable.concept_1 }} />
                     </div>

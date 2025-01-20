@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Home from './pages/Home';
+import Chatbot from './pages/Chatbot';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Connect from './pages/Connect';
@@ -26,6 +27,7 @@ function App() {
             <div className="main_layout_middle">
               <Routes>
                 <Route path='/' element={<Home />} />
+                <Route path='/Chatbot' element={<Chatbot />} />
                 <Route path='/Projects' element={<Projects />} />
                 <Route path='/About' element={<About />} />
                 <Route path='/Connect' element={<Connect />} />

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Layers3, House, BriefcaseBusiness, AtSign } from 'lucide-react';
+import { House, BotMessageSquare, Layers3, BriefcaseBusiness, AtSign } from 'lucide-react';
 import { CurrentPageContext } from '../../ContextProvider';
 
 import { CSSVariable } from '../../color_variables/CSSVariable';
@@ -39,12 +39,14 @@ const NavBar = () => {
         <div className="web_name">Dang The Hung</div>
         <div className="nav-bar-big">
           <Link to='/' className="nav-bar-big-item" style={{ background: ColorForPage('/') }}>Home</Link>
+          <Link to='/Chatbot' className="nav-bar-big-item" style={{ background: ColorForPage('/Chatbot') }}>Chatbot</Link>
           <Link to='/Projects' className="nav-bar-big-item" style={{ background: ColorForPage('/Projects') }} >Projects</Link>
           <Link to='/About' className="nav-bar-big-item" style={{ background: ColorForPage('/About') }}>About</Link>
           <Link to='/Connect' className="nav-bar-big-item" style={{ background: ColorForPage('/Connect') }}>Connect</Link>
         </div>
         <div className="nav-bar-small">
           <IconButton IconComponent={House} path='/' label='Home' color={ColorForPage('/')} />
+          <IconButton IconComponent={BotMessageSquare} path='/Chatbot' label='Home' color={ColorForPage('/Chatbot')} />
           <IconButton IconComponent={Layers3} path='/Projects' label='Projects' color={ColorForPage('/Projects')} />
           <IconButton IconComponent={BriefcaseBusiness} path='/About' label='About' color={ColorForPage('/About')} />
           <IconButton IconComponent={AtSign} path='/Connect' label='Connect' color={ColorForPage('/Connect')} />
