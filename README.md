@@ -10,6 +10,8 @@ The website is designed for scalability, allowing me to add more projects, work 
 
 A chatbot was added later. Its code can be found in the [backend](backend). It is written in Node.js, is deployed on AWS Lambda, and communicates with the frontend via API Gateway WebSocket.
 
+<img src="screenshot_images/illustration_image.jpg" alt="Illustration" width="50%">
+
 ![Illustration](screenshot_images/illustration_image.jpg)
 
 ![Chatbot](screenshot_images/chatbot.png)
