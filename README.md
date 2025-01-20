@@ -12,6 +12,4 @@ A chatbot was added later. Its code can be found in the [backend](backend). It i
 
 <img src="screenshot_images/illustration_image.jpg" alt="Illustration" width="50%">
 
-![Illustration](screenshot_images/illustration_image.jpg)
-
 ![Chatbot](screenshot_images/chatbot.png)
