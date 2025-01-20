@@ -8,12 +8,8 @@ There's a CI/CD pipeline located in [.github/workflows/main-deploy.yml](.github/
 
 The website is designed for scalability, allowing me to add more projects, work experience, and education later by modifying the files in [src/portfolio_data/](src/portfolio_data/).
 
-## Chatbot
-
-The chatbot is added later.
-
-The chatbot was added later.
-
-The code can be found in the [backend](backend), which is deployed on AWS Lambda. It is written in Node.js and communicates with the frontend via API Gateway WebSocket.
+A chatbot was added later. Its code can be found in the [backend](backend). It is written in Node.js, is deployed on AWS Lambda, and communicates with the frontend via API Gateway WebSocket.
 
 ![Illustration](screenshot_images/illustration_image.jpg)
+
+![Chatbot](screenshot_images/chatbot.png)
