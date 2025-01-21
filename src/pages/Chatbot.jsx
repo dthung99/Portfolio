@@ -81,18 +81,17 @@ const Chatbot = () => {
                             </div>
                         }
                     </div>
-                </div>
-
-                <div className="chat-window-bottom">
-                    <input
-                        className='chat-input'
-                        type="text"
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                        placeholder="Message..."
-                    />
-                    <button className='chat-input-send-button' onClick={handleSend}>Send</button>
+                    <div className="chat-window-bottom">
+                        <input
+                            className='chat-input'
+                            type="text"
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+                            placeholder="Message..."
+                        />
+                        <button className='chat-input-send-button' onClick={handleSend}>Send</button>
+                    </div>
                 </div>
             </div>
         </>

@@ -8,7 +8,7 @@
     .chatbot-container {
         width: 100%;
         max-width: 60rem;
-        height: calc(100vh - 13.5rem);
+        height: calc(100vh - 11rem);
         border-radius: 1rem;
         display: flex;
         flex-direction: column;
@@ -36,43 +36,37 @@
             }
         }
 
-    }
+        .chat-window-bottom {
+            display: flex;
+            flex-direction: row;
+            padding: 1rem;
+            // flex-wrap: wrap;
 
-    .chat-window-bottom {
-        position: fixed;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        padding: 1rem;
-        border-radius: 1rem;
+            .chat-input {
+                flex-grow: 1;
+                font-size: 1.2rem;
+                border: 1px solid $concept_4;
+                border-radius: 1rem;
+                padding: 0.5rem;
+                border-top: none;
+                margin-right: 0.5rem;
+                background-color: rgba($color: #ffffff, $alpha: 0.1);
+                color: inherit;
+                width: 0rem;
 
-        .chat-input {
-            flex-grow: 1;
-            font-size: 1.2rem;
-            border: 1px solid $concept_4;
-            border-radius: 1rem;
-            padding: 0.5rem;
-            border-top: none;
-            margin-right: 0.5rem;
-            background-color: rgba($color: #ffffff, $alpha: 0.1);
-            color: inherit;
-            width: 0rem;
-
-            &:focus {
-                border-color: rgba($color: #ffffff, $alpha: 0.6); // Change this to your desired active border color
-                outline: none; // Optional: removes default outline
+                &:focus {
+                    border-color: rgba($color: #ffffff, $alpha: 0.6); // Change this to your desired active border color
+                    outline: none; // Optional: removes default outline
+                }
             }
-        }
 
-        .chat-input-send-button {
-            @extend .button_effect;
-            background-color: $concept_4;
-            font-size: 1.2rem;
-            border-radius: 1rem;
-            padding: 0.5rem;
+            .chat-input-send-button {
+                @extend .button_effect;
+                background-color: $concept_4;
+                font-size: 1.2rem;
+                border-radius: 1rem;
+                padding: 0.5rem;
+            }
         }
     }
 }
