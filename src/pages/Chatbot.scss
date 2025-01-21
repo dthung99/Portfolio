@@ -14,7 +14,6 @@
         flex-direction: column;
 
         .chat-window {
-            flex-grow: 1;
             font-size: 1.2rem;
             display: flex;
             flex-direction: column;
@@ -38,10 +37,14 @@
         }
 
         .chat-window-bottom {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
             display: flex;
             flex-direction: row;
             padding: 1rem;
-            // flex-wrap: wrap;
 
             .chat-input {
                 flex-grow: 1;
